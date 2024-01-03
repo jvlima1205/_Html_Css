@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.05em;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Teste com formulários</h1>
+    <form action="cadastro.php" method="get">
+        <p>
+            <label for="iest">Estado:</label>
+            <!-- select = cria uma caixa de seleção única
+            Apenas com as infomações disponíveis
+            -->
+            <select name="est" id="iest">
+                <!-- option = opção da caixa select -->
+                <!-- selected = mesma função do checked (deixa o valor pré-setado) -->
+                <!-- disable = disabilita o item para ser selecionado (utilizado como se fosse placeholder) -->
+                <option value="" selected disabled>--- Escolha ---</option>
+                <!-- optgroup = agrupa os option -->
+                <!-- label = título da subdivisão -->
+                <optgroup label="Sudeste">
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="MG">Minas Gerais</option>
+                </optgroup>
+
+                <optgroup label="Nordeste">
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="MA">Maranhão</option>
+                </optgroup>
+            </select>
+        </p>
+
+        <p>
+            <label for="iprof">Profissão:</label>
+            <!-- list = cria a conexão com o id do datalist -->
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <!-- datalist = caixa de sujestão - é necessário mesmo nome de id e list do input -->
+            <datalist id="lstprof">
+                <!-- value = código do item - se removido coloca o próprio
+                Segue criando o autocomplete do que já digitado pelo usuário,
+                Somente para ele
+                -->
+                <option value="ADM">Administrador</option>
+                <option value="TI">Técnico em informática</option>
+                <option value="PROFE">Professor</option>
+                <option value="DEV">Desenvolvedor</option>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="imsg">Mensagem:</label> <br>
+            <!-- textarea = caixa onde pode ser digitada uma mensagem
+            cols / rows = tamanho mas não limite
+            placeholder = tire todos os espaços internos para funcionar 
+            *textarea = (espaço interno interpreta como <pre>)
+            style:rezize = 'none' = tira a permissão do usuário de modificar o tamanho
+            -->
+            <textarea name="msg" id="imsg" cols="30" rows="10" 
+            placeholder="Sua mensagem..." style="resize: none;"></textarea>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+</body>
+
+</html>

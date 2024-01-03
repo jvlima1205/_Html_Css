@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.05em;
+        }
+        fieldset{
+            padding: 5px 10px;
+        }
+        ul.checkbox{
+            padding-inline-start: 10px;
+            list-style-type: none;
+            line-height: 1.4em;
+        }
+        label{
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de formulários</h1>
+
+    <form action="cadastro.php">
+        <fieldset>
+            <legend>Gênero</legend>
+            <ul class="checkbox">
+                <!-- input:radio = caixa de seleção única
+                Uma vez selecionado, não se pode desmarcar, apenas trocar
+                Para isso se coloca o mesmo name para ambos os input
+                -->
+                <!-- Checked = já mantém o campo pré-selecionado ao abrir o site -->
+                <li><input type="radio" name="genero" id="imas" checked value="H"><label for="imas">Masculino</label></li>
+                <li><input type="radio" name="genero" id="ifem" value="F"><label for="ifem">Feminino</label></li>
+            </ul>
+            
+        </fieldset>
+        <fieldset>
+            <legend>Esportes favoritos</legend>
+            <!-- input:checkbox = caixa de seleção varíavel
+            Onde se pode informar quantos itens estiver disponíveis
+            Da maneira que preferir
+            -->
+            <ul class="checkbox">
+                <li><input type="checkbox" name="fut" id="ifut" checked> <label for="ifut">Futebol</label></li>
+                <li><input type="checkbox" name="bas" id="ibas"> <label for="ibas">Basquete</label></li>
+                <li><input type="checkbox" name="nat" id="inat" checked> <label for="inat">Natação</label></li>
+                <li><input type="checkbox" name="ten" id="iten"> <label for="iten">Tênis</label></li>
+            </ul> 
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+
+</body>
+</html>

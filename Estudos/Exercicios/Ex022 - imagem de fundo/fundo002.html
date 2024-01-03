@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalização dos fundos</title>
+    <style>
+        body{
+            background-image: url(https://inglaterrabrasil.com.br/wp-content/uploads/sites/8/2022/08/conheca-londres.jpg);
+            background-size: 200px 200px; /* Tamanho da imagem */
+            background-repeat: repeat; /* sem repetição */
+            /* background-repeat: repeat-x; - horizontal eixo x
+            background-repeat: repeat-y; - vertical eixo y
+            background-repeat: no-repeat; - padrão com repetição */
+        }
+
+        div#q1{
+            font-size: 20px;
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            background-color: aqua;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: black;
+            border-radius: 10px;
+        }
+
+        div#q1:hover{
+            background-color: green;
+            transition: 0.5s;
+            font-size: 25px;
+            color: white;
+        }
+
+        a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+  <a href="fundo001.html">
+      <div id="q1">Fundo 01</div>
+  </a>
+  <a href="fundo003.html">
+      <div id="q1">Fundo 03</div>
+  </a>
+
+</body>
+</html>

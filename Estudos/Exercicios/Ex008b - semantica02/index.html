@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras formatações </title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        mark{
+            background-color: aqua;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Outras formatações</h1>
+    <hr>
+    <h2>Código-fonte:</h2>
+    <p>O documento <code>document.getElementId('teste')</code> é Javascript</p>
+    <p>C# em <mark>&lt;code&gt;</mark> - (linguagem de código) e 
+        <mark>&lt;pre&gt;</mark> - (evita vários &lt;br&gt;)</p>
+    <pre>
+        <code>
+    int x = int.parse(console.readline())
+    if (x % 2 == 0){
+        Console.Writeline("Esté número é par: " + x)
+    }
+    else {
+        Console.Writeline("Este número é ímpar: " + x)
+    }
+        </code>
+    </pre>
+    <hr>
+    <h2>Citações</h2>
+    <p>Já dizia meu irmão: <q>Agora azedou o pé do frango</q> - Utilizando &lt;q&gt; (citação - semântico)
+        <br>Não se utliza quando são outros significados, Ex.: É meio "dolorida"
+    </p>
+    <p>Como já dizia o autor Diego Eis E Elcio Ferreira em seu livro:</p>
+        <blockquote 
+        cite="https://www.google.com.br/books/edition/HTML5_e_CSS3_com_farinha_e_pimenta/nDKMAwAAQBAJ?hl=pt-BR&gbpv=0">
+            Um dos principais objetivos do IITML5 é facilitar a manipulação do elemento possibilitando o desenvolvedor <br>
+            a modificar as características dos objetos de forma não intrusiva e de maneira que seja transparente para o usuário final.
+        </blockquote>
+    <p>Estou estudando <abbr title="Hyper-Text Markup Language">HTML</abbr> 
+        e <abbr title="Cascading Style Sheets">CSS</abbr>, é divertido</p>
+    <hr>
+    <h2>Texto invertido</h2>
+    <p><bdo dir="rtl">Estou aprendendo a me estressar muito</bdo></p>
+
+</body>
+
+</html>

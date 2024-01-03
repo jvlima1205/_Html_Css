@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de caixas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+        }
+
+        a {
+            text-decoration: none;
+            color: blue;
+        }
+
+        a:visited {
+            color: blue;
+        }
+
+        a:hover {
+            color: aqua;
+            text-decoration: underline;
+        }
+
+        abbr {
+            text-decoration: underline;
+        }
+
+        abbr:hover {
+            color: red;
+        }
+
+        h1 { /* Box-level */
+            /* display: inline; tranforma em "inline-box" -> não se faz altura e largura */
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+
+            /* ShortHands */
+
+            /* Padding: top right bottom left (sentido horário) */
+            /* padding: 10px 10px 10px 10px; -> se todos os valores forem iguais, usa-se somente padding */
+            padding: 10px;
+
+            /*  padding-top: 10px;
+                padding-left: 10px;
+                padding-right: 10px; 
+                padding-bottom: 10px;
+            */
+            /* ------------------------------------------------------------------------------------------ */
+
+            /* margin: auto;  Deixar uma caixa no centro da tela */
+            /* margin: top left bottom right */
+            /* Comando "auto" centraliza */
+            margin: 15px auto 30px auto;
+            /* margin: 10px; se todos os valores forem iguais, usa-se somente margin */
+
+            /*  margin-top: 10px;
+                margin-left: 10px;
+                margin-bottom: 10px;
+                margin-right: 10px; 
+            */
+
+            /* ------------------------------------------------------------------------------------------ */
+            /* Border: width style color */
+            border: 15px solid darkgreen;
+
+            /*  border-width: 15px;
+                border-style: solid;
+                border-color: darkgreen;
+             */
+
+            /* ------------------------------------------------------------------------------------------ */
+            /* outline: width color style */
+            outline: 5px red dashed;
+
+            /*  outline-width: 5px;
+                outline-color: red;
+                outline-style: dashed; 
+            */
+            /* ------------------------------------------------------------------------------------------ */
+        }
+
+        a {
+            /* display: block; -> tranforma em "box-level"  */
+            /* display: inline-block; -> permanece inline, mas agora pode se colocar ajustes de block-level */
+            border: 15px solid gold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+
+    <p>Parágrafos são <abbr title="Próxima linha">box-level</abbr>, os <a href="#">Links são exemplos de
+            inline-level</a>. Veremos como isso funciona!</p>
+            <a href="caixas02.html">Próximo site</a>
+
+</body>
+
+</html>

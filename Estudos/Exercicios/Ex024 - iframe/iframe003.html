@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframe</title>
+    <style>
+        * {
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe {
+            width: 95vw;
+            height: 400px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio nobis accusantium voluptates itaque, magni
+        tempora. Vitae asperiores repudiandae corporis distinctio accusamus, minus omnis, autem temporibus expedita in
+        officia, nulla odit. Autem earum repellendus, quis libero quas repudiandae. Minima repudiandae veritatis aperiam
+        vero explicabo sapiente iusto, sit placeat magni debitis fuga?</p>
+
+    <ul>
+        <!-- Para acessar através do iframe pelo link na própria página é obrigatório
+        Colocar um name no iframe e especificar esse nome o target do link
+        -->
+        <li><a href="paginas/pag001.html" target="frame">Primeira página</a></li>
+        <li><a href="paginas/pag002.html" target="frame">Segunda página</a></li>
+        <li><a href="paginas/pag003.html" target="frame">Terceira página</a></li>
+    </ul>
+
+    <p>Quidem, omnis inventore animi, expedita ipsa aut ab quisquam officiis vel deserunt ad commodi mollitia aspernatur
+        doloribus sequi modi officia quaerat reprehenderit consequuntur aperiam quas. Cupiditate vitae architecto
+        accusantium, nemo voluptas officiis magni animi pariatur eaque, deleniti necessitatibus. Laudantium, nam
+        accusamus veniam molestiae vero recusandae! Consectetur repellendus impedit consequuntur velit.</p>
+
+    <!-- name - para que o href target possa identificar -->
+    <iframe src="paginas/pag001.html" name="frame"></iframe>
+
+    <!-- Com o comando srcdoc é possível inserir um código HTML básico
+    para quando iniciar o site, mostre o que foi inserido
+    (não muito utilizado, é preferível montar uma página a parte)
+    -->
+    <iframe srcdoc="<h1>Teste de texto</h1>" name="frame"></iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt odit dicta quis nostrum accusamus quidem velit,
+        laborum natus dolor labore sint, officiis mollitia iure id praesentium ipsum, magni assumenda? Facilis vero
+        temporibus, enim non dicta cupiditate quos veniam ut fugit assumenda exercitationem et corrupti dignissimos
+        veritatis recusandae excepturi? Quas obcaecati aliquam iure veniam adipisci voluptatibus sunt totam illo amet!
+        Dolore sed magnam earum commodi nam quos blanditiis odio eius cum dolor nobis, sapiente officiis atque quae
+        pariatur quod! Iure, atque.</p>
+
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+    *{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.05em;
+    }
+    </style>
+</head>
+<body>
+    <h1>Teste com formulário</h1>
+    <form action="cadastro.php" method="get">
+        <fieldset>
+            <legend>Alguns tipos de input</legend>
+            <p>
+                <label for="icor">Cor: </label>
+                <!-- input:color = caixa de seleção de cor -->
+                <input type="color" name="cor" id="icor" value="#00FF00">
+            </p>
+            <p>
+                <label for="inivel">Nível de satisfação: </label>
+                <!-- input:range - caixa de seleção de número por botção deslizante -->
+                <!-- min / max = valor min e max -->
+                <!-- value = onde irá iniciar -->
+                <input type="range" name="nivel" id="inivel" min="10" max="200" value="2">
+            </p>
+            <p>
+                <!-- input:file = caixa onde são enviador arquivos -->
+                <!-- Sempre que for enviar arquivos o form precisa estar em POST -->
+                <label for="ifoto">Foto do perfil: </label>
+                <input type="file" name="foto" id="ifoto">
+            </p>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+
+    </form>
+</body>
+</html>

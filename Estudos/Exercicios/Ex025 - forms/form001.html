@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro formulário</h1>
+    <!-- Formúlario onde os dados serão cadastrados (ações) -->
+    <!-- Action = onde serão enviados os dados -->
+    <!-- Method - Post = Retira as informações do Link / GET - Mostra as informações -->
+    <!-- Autocomplete - auto completar -->
+    <form action="cadastro.php" method="post" autocomplete="off">
+        <!-- Label = fazer referência com o input pelo ID -->
+        <!-- For = nome que ira fazer a referência -->
+        <p><label for="inome">Nome:</label> 
+            <!-- Input = um botão / caixa onde será seguido o que for pedido -->
+            <!-- Type = o que será a caixa -->
+            <!-- Name = usado para conversar com o back-end -->
+            <!-- Id = usado para conversar com o front-end (lavbel) -->
+            <input type="text" name="name" id="inome"></p>
+            
+
+        <p><label for="isobrenome">Sobrenome:</label> 
+            <input type="text" name="sobrenome" id="isobrenome"></p>
+            <!-- Sumbit envia automaticamente para o tratamento de action do form -->
+        <p><input type="submit" value="Enviar"></p>
+
+    </form>
+</body>
+</html>

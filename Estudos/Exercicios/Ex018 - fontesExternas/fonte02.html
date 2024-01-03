@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes externas</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* 
+            Formats:
+            openType - (otf)
+            trueType - (ttf)
+            embedded-openType
+            trueType-aat (Apple Advanced Typogrphy)
+            svg 
+            - Para descobrir o tipo da fonte, abra o arquivo que baixou, e na primeira linha vai encontrar a "version"
+        */
+        @font-face {
+            font-family: 'Bouncy';
+            src: url(Fonts/Bouncy-PERSONAL_USE_ONLY.otf) format('openType');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'Flowrise';
+            src: url(Fonts/FLOWRISE.otf) format('openType'), url(Fonts/FLOWRISE.ttf) format(trueType);
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        h1{
+            font-family: 'Bouncy';
+        }
+        p, a{
+            font-family: 'Flowrise';
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Título</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione iusto ut consequuntur eaque necessitatibus fugiat fuga autem ex nesciunt voluptatibus, culpa provident, expedita, adipisci corporis. Asperiores quis iusto repellat. Architecto hic facilis eius earum! Similique obcaecati itaque quibusdam voluptatum delectus aperiam possimus molestias eveniet dolores, debitis ipsum doloremque facere cumque rem dignissimos aliquam? Sapiente maxime voluptatibus asperiores alias quo nostrum accusamus excepturi corporis est, consequatur cum dignissimos eveniet. Esse adipisci, beatae non aperiam ut, doloremque soluta necessitatibus quasi fuga atque nisi dicta numquam impedit iusto reiciendis cupiditate consequatur quibusdam tenetur saepe culpa porro, excepturi sequi accusamus blanditiis? Eligendi, sequi quas.</p>
+        <br>
+        <a href="fonte01.html">Google fontes - imports</a>
+    </main>
+        
+    </body>
+    </html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+        
+</head>
+
+<body>
+    <header>
+        <h1>Menu Hambúrguer</h1>
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <nav id="menu">
+            <ul>
+                <li><a href="#">Opção 1</a></li>
+                <li><a href="#">Opção 2</a></li>
+                <li><a href="#">Opção 3</a></li>
+                <li><a href="#">Opção 4</a></li>
+                <li><a href="#">Opção 5</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h1>Testando Media Queries</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto ducimus beatae voluptatibus neque
+                recusandae aperiam commodi animi necessitatibus, unde odio molestiae obcaecati distinctio nam earum
+                magni
+                corrupti sed in corporis facilis laboriosam cupiditate, eos dolores quis! Quis tempora rerum debitis
+                omnis
+                amet soluta nam, hic ducimus, suscipit eaque perferendis aliquid tenetur quia obcaecati culpa
+                exercitationem! Adipisci in voluptatibus, necessitatibus aliquam, ab praesentium autem neque delectus
+                voluptate non error sequi nisi dolor aperiam facilis nostrum. Laborum incidunt aspernatur dolorum nam
+                ipsum!
+            </p>
+            <p>Neque, voluptatibus expedita atque ut quisquam sequi sunt obcaecati dolorem voluptate! Consectetur rem
+                qui
+                quasi officiis cupiditate cumque impedit. Provident tempore ullam reiciendis, pariatur atque facilis
+                temporibus cupiditate vitae rerum repellendus eveniet enim ab odio nam, at ducimus perferendis?
+                Doloremque
+                fugit corrupti, facere fuga quisquam ad quos error eligendi saepe rerum numquam? Cum corporis excepturi
+                fuga
+                voluptatem quod est facere iste veritatis vel illo, minus molestias reiciendis ipsam voluptatum numquam
+                nam
+                sunt ea quae explicabo unde nisi quia. Pariatur, iure!</p>
+            <p>Id, excepturi? Asperiores excepturi, doloremque commodi quam consequuntur maxime, non ab nulla quisquam
+                hic
+                illum? Quam repellendus, cupiditate veniam exercitationem aliquid accusamus sint magnam accusantium
+                distinctio. Sapiente saepe amet, repudiandae earum a dolores nulla harum laboriosam ipsum! Ipsam, sit
+                ipsa?
+                Debitis nulla modi animi voluptates at eius architecto quasi placeat sapiente fugit, voluptas corrupti
+                non
+                earum omnis delectus. Officia aspernatur culpa ex eos dolor, modi doloremque consectetur numquam itaque
+                deserunt enim amet eius voluptates iusto vitae laborum. Sunt, sint sapiente?</p>
+        </article>
+    </main>
+
+    <script>
+        function clickMenu(){
+            if(menu.style.display == 'block'){
+                menu.style.display = 'none'    
+            }
+            else{
+                menu.style.display = 'block'
+            }
+        }
+    </script>
+
+</body>
+
+</html>

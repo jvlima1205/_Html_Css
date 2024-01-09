@@ -12,8 +12,7 @@ body, html{
 
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
+    align-items: stretch;
     
     /* justify-content: space-evenly; */
     
@@ -22,8 +21,5 @@ body, html{
 .box{
     background-color: #DDD;
     border: 1px solid green;
-    width: 60px;
-    height: 60px;
     
-    flex-grow: 1;
 }

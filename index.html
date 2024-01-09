@@ -9,37 +9,52 @@
         * {
             font-family: Arial, Helvetica, sans-serif;
         }
-        section{
-            display: inline-block;
+
+        main > h1{
+            text-align: center;
+            
         }
-        table{
+        section{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+
+        table {
             display: inline;
             border-collapse: collapse;
             margin-right: 20px;
         }
-        th{
+
+        th {
             font-size: 1.3em;
         }
-        td{
+
+        td {
             width: 350px;
             font-size: 1.2em;
-            border: 1px solid black;   
+            border: 1px solid black;
             padding: 5px;
         }
-        tr:nth-child(even){
+
+        tr:nth-child(even) {
             background-color: lightgray;
         }
-        td:hover{
+
+        td:hover {
             border: 2px solid red;
         }
+
         a {
             color: blue;
             text-shadow: 1px 0px 1px rgba(0, 0, 255, 0.192);
         }
-        a:hover{
+
+        a:hover {
             color: red;
             transition: 0.1s;
         }
+
         a:active {
             color: blueviolet;
         }
@@ -66,88 +81,93 @@
             <li><a href="Estudos/Exercicios/Ex010 - links/index.html">Ex010</a> - Links</li>
         </ul> -->
 
-            <section>
-                <table>
-                    <tr>
-                        <th>Exercicios 0 - 10</th>
-                    </tr>
-                    <tr>
-                        <td>
-                            <a href="Estudos/Exercicios/Ex001 - HelloWord/index.html" target="_blank">Hello Word!</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <a href="Estudos/Exercicios/Ex002 - p_br/index.html" target="_blank">Ex002</a> - Parágrafos - Quebra de linha (br)
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <a href="Estudos/Exercicios/Ex003 - imagens/index.html" target="_blank">Ex003</a> - Imagens
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <a href="Estudos/Exercicios/Ex004 - icon/index.html" target="_blank">Ex004</a> - Icons
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <s>Ex005 - Nothing</s>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <a href="Estudos/Exercicios/Ex006 - hierarquia H/index.html" target="_blank">Ex006</a> - Hierarquia
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <s>Ex007 - Nothing</s>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <a href="Estudos/Exercicios/Ex008 - semantica/index.html" target="_blank">Ex008a</a> - Semântica 01
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <a href="Estudos/Exercicios/Ex008b - semantica02/index.html" target="_blank">Ex008b</a> - Semântica 02
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <a href="Estudos/Exercicios/Ex009 - listas/index.html" target="_blank">Ex009</a> - Listas
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <a href="Estudos/Exercicios/Ex010 - links/index.html">Ex010</a> - Links
-                        </td>
-                    </tr>
-                </table>
-            </section>
-
         <section>
+            <table>
+                <tr>
+                    <th>Exercicios 0 - 10</th>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="Estudos/Exercicios/Ex001 - HelloWord/index.html" target="_blank">Hello Word!</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="Estudos/Exercicios/Ex002 - p_br/index.html" target="_blank">Ex002</a> - Parágrafos -
+                        Quebra de linha (br)
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="Estudos/Exercicios/Ex003 - imagens/index.html" target="_blank">Ex003</a> - Imagens
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="Estudos/Exercicios/Ex004 - icon/index.html" target="_blank">Ex004</a> - Icons
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <s>Ex005 - Nothing</s>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="Estudos/Exercicios/Ex006 - hierarquia H/index.html" target="_blank">Ex006</a> -
+                        Hierarquia
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <s>Ex007 - Nothing</s>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="Estudos/Exercicios/Ex008 - semantica/index.html" target="_blank">Ex008a</a> - Semântica
+                        01
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="Estudos/Exercicios/Ex008b - semantica02/index.html" target="_blank">Ex008b</a> -
+                        Semântica 02
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="Estudos/Exercicios/Ex009 - listas/index.html" target="_blank">Ex009</a> - Listas
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="Estudos/Exercicios/Ex010 - links/index.html">Ex010</a> - Links
+                    </td>
+                </tr>
+            </table>
             <table>
                 <tr>
                     <th>Exercicios 11 - 20</th>
                 </tr>
                 <tr>
-                    <td><a href="Estudos/Exercicios/Ex011 - imagem flexivel/index.html" target="_blank">Ex011</a> - Imagem flexível</td>
+                    <td><a href="Estudos/Exercicios/Ex011 - imagem flexivel/index.html" target="_blank">Ex011</a> -
+                        Imagem flexível</td>
                 </tr>
                 <tr>
                     <td><a href="Estudos/Exercicios/Ex012 - videos/index.html" target="_blank">Ex012</a> - Vídeos</td>
                 </tr>
                 <tr>
-                    <td><a href="Estudos/Exercicios/Ex013 - css inline/index.html" target="_blank">Ex013</a> - CSS inline</td>
+                    <td><a href="Estudos/Exercicios/Ex013 - css inline/index.html" target="_blank">Ex013</a> - CSS
+                        inline</td>
                 </tr>
                 <tr>
-                    <td><a href="Estudos/Exercicios/Ex014 - css interno/index.html" target="_blank">Ex014</a> - CSS interno</td>
+                    <td><a href="Estudos/Exercicios/Ex014 - css interno/index.html" target="_blank">Ex014</a> - CSS
+                        interno</td>
                 </tr>
                 <tr>
-                    <td><a href="Estudos/Exercicios/Ex015 - css externo/index.html" target="_blank">Ex015</a> - CSS externo</td>
+                    <td><a href="Estudos/Exercicios/Ex015 - css externo/index.html" target="_blank">Ex015</a> - CSS
+                        externo</td>
                 </tr>
                 <tr>
                     <td><a href="Estudos/Exercicios/Ex016 - degrade/index.html" target="_blank">Ex016</a> - Degrade</td>
@@ -156,18 +176,19 @@
                     <td><a href="Estudos/Exercicios/Ex017 - fontes/fonte01.html" target="_blank">Ex017</a> - Fontes</td>
                 </tr>
                 <tr>
-                    <td><a href="Estudos/Exercicios/Ex018 - fontesExternas/fonte01.html" target="_blank">Ex018</a> - Fontes externas</td>
+                    <td><a href="Estudos/Exercicios/Ex018 - fontesExternas/fonte01.html" target="_blank">Ex018</a> -
+                        Fontes externas</td>
                 </tr>
                 <tr>
-                    <td><a href="Estudos/Exercicios/Ex019 - seletores/seletor.html" target="_blank">Ex019</a> - Seletores</td>
+                    <td><a href="Estudos/Exercicios/Ex019 - seletores/seletor.html" target="_blank">Ex019</a> -
+                        Seletores</td>
                 </tr>
                 <tr>
-                    <td><a href="Estudos/Exercicios/Ex020 - pseudo classes/pseudoclasse.html" target="_blank">Ex020</a> -  PseudoClases</td>
+                    <td><a href="Estudos/Exercicios/Ex020 - pseudo classes/pseudoclasse.html" target="_blank">Ex020</a>
+                        - PseudoClases</td>
                 </tr>
             </table>
-        </section>
 
-        <section>
             <table>
                 <tr>
                     <th>Exercícios 21 - 30</th>
@@ -176,7 +197,8 @@
                     <td><a href="Estudos/Exercicios/Ex021 - caixas/caixas01.html">Ex021</a> - Caixas</td>
                 </tr>
                 <tr>
-                    <td><a href="Estudos/Exercicios/Ex022 - imagem de fundo/fundo001.html">Ex022</a> - Imagem de fundo</td>
+                    <td><a href="Estudos/Exercicios/Ex022 - imagem de fundo/fundo001.html">Ex022</a> - Imagem de fundo
+                    </td>
                 </tr>
                 <tr>
                     <td><a href="Estudos/Exercicios/Ex023 - tabelas/tabela001.html">Ex023</a> - Tabelas</td>
@@ -189,16 +211,17 @@
                 </tr>
                 <tr>
                     <td class="itens" onclick="menu()">
-                    <span>Media Query: </span>
-                    <a href="Estudos/Exercicios/Ex026 - mediaQuery/Mq001/index.html" target="_blank">Mq001</a> -
-                    <a href="Estudos/Exercicios/Ex026 - mediaQuery/Mq002/index.html" target="_blank">Mq002</a> -
-                    <a href="Estudos/Exercicios/Ex026 - mediaQuery/Mq003/index.html" target="_blank">Mq003</a> -
-                    <a href="Estudos/Exercicios/Ex026 - mediaQuery/Mq004/index.html" target="_blank">Mq004</a> -
-                    <a href="Estudos/Exercicios/Ex026 - mediaQuery/Mq005/index.html" target="_blank">Mq005</a>
-                </td>
+                        <span>Media Query: </span>
+                        <a href="Estudos/Exercicios/Ex026 - mediaQuery/Mq001/index.html" target="_blank">Mq001</a> -
+                        <a href="Estudos/Exercicios/Ex026 - mediaQuery/Mq002/index.html" target="_blank">Mq002</a> -
+                        <a href="Estudos/Exercicios/Ex026 - mediaQuery/Mq003/index.html" target="_blank">Mq003</a> -
+                        <a href="Estudos/Exercicios/Ex026 - mediaQuery/Mq004/index.html" target="_blank">Mq004</a> -
+                        <a href="Estudos/Exercicios/Ex026 - mediaQuery/Mq005/index.html" target="_blank">Mq005</a>
+                    </td>
                 </tr>
             </table>
         </section>
     </main>
 </body>
+
 </html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GridLayout</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        .container div{
+            background-color: royalblue;
+            padding: 1em;
+        }
+        div:nth-child(even){
+            background-color: skyblue;
+            
+        }
+        .container{
+            display: grid;
+            /* grid-template-columns: 200px 200px 200px; */
+            grid-template-columns: repeat(1,1fr);
+            grid-template-rows: repeat(3, minmax(100px, auto));
+            gap: 1rem;
+
+            @media screen and (min-width:768px) {
+                grid-template-columns: repeat(5, 1fr);
+            }
+        }
+
+        .container div:nth-child(1){
+            /* grid-column-start: 1;
+            grid-column-end: 3; */
+            grid-column: 1 / -1;
+            height: 300px;
+        }
+        .container div:nth-child(3){
+            @media (min-width:768px){
+                grid-column: 2 / 5;
+            }
+            
+        }
+        .container div:nth-child(5){
+            grid-column: 1 / -1;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        
+    </div>
+</body>
+</html>

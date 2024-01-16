@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GridLayout</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        .container div{
+            background-color: royalblue;
+            padding: 1em;
+        }
+        div:nth-child(even){
+            background-color: skyblue;
+            
+        }
+        .container{
+            display: grid;
+            height: 100vh;
+            
+            /* grid-template-columns: 200px 200px 200px; */
+            grid-template-columns: repeat(3,200px);
+            grid-auto-rows: 100px;
+            gap: 10px;
+
+            justify-items: center;
+            align-items: center;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        
+    </div>
+</body>
+</html>

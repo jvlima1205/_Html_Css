@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GridLayout</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: .5em;
+            height: 100vh;
+            margin: auto;
+            grid-template-areas: 
+            "header"
+            "main"
+            "side-main"
+            "sidebar"
+            "side-sec"
+            "footer";
+            
+            @media screen and (min-width:728px) {
+                grid-template-columns: 1fr repeat(4, minmax(auto, 200px)) 1fr;
+                grid-template-rows: .5fr 2fr .5fr .5fr;
+                grid-template-areas:
+                "header header header header header header"
+                ". main main main sidebar ."
+                ". side-main side-main side-sec side-sec ."
+                "footer footer footer footer footer footer"
+                ;
+                
+            }
+            
+
+        }
+
+        .l-header{
+            background-color: skyblue;
+            grid-area: header;
+        }
+        .l-main{
+            background-color: coral;
+            grid-area: main;
+        }
+        .l-sidebar{
+            background-color: royalblue;
+            grid-area: sidebar;
+        }
+        .l-aside-main{
+            background-color: purple;
+            grid-area: side-main;
+        }
+        .l-aside-sec{
+            background-color: purple;
+            grid-area: side-sec;
+        }
+        .l-footer{
+            background-color: skyblue;
+            grid-area: footer;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="l-header"></header>
+        <main class="l-main"></main>
+        <aside class="l-sidebar"></aside>
+        <aside class="l-aside-main"></aside>
+        <aside class="l-aside-sec"></aside>
+        <footer class="l-footer"></footer>
+    </div>
+</body>
+</html>
